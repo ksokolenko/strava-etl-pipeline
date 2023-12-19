@@ -1,0 +1,6 @@
+### Main goal: Build an ETL data pipeline with real-time data from a personal Strava account with all activities list and its visualization through Tableau, in other words, each new activity (as well as all previous activities) should be triggered and transferred through the whole pipeline and finally appear in Tableau.
+
+### Main ste-by-step article on [Medium](https://medium.com/@karina.sokolenko/strava-etl-live-data-pipeline-with-tableau-visualization-302008ec3f0d?source=friends_link&sk=4f7aaa1e8298100652e2c2dbed2fd178).
+
+### Architecture diagram:
+![main Architectur Diagram](https://github.com/ksokolenko/strava-etl-pipeline/blob/main/architecture_diagram/main_diagram.png.jpg)
