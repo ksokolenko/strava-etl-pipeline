@@ -1,0 +1,16 @@
+/*
+new table creation, change "Distance" column data type from varchar to number
+plese, keep in mind, that 'CREATE' and 'FROM' values should be changed according to your tables name
+*/
+
+CREATE OR REPLACE TABLE strava_modified
+AS
+SELECT  
+"Activity_ID", "Activity_Date", "Activity_Name", "Activity_Type", "Elapsed_Time", "Moving_Time", cast("Distance" as number(38,2)) as "Distance", "Max_Speed", "Average_Speed", "Elevation_Gain", "Elevation_Loss", "Elevation_Low", "Elevation_High", "Max_Grade", "Average_Grade", "Calories", "Total_Steps"
+FROM "strava-strava";
+
+/*
+rename columns
+*/
+alter table strava_modified rename column "Max_Speed" to "Maximum_Speed";
+alter table strava_modified rename column "Max_Grade" to "Maximum_Grade";
